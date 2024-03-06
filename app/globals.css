@@ -2,26 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* background colors */
+.background {
+  @apply bg-gray-50
+  text-gray-950
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.right-circle {
+  @apply bg-[#fbe2e3]
+  absolute -z-10 top-[-6rem] right-[1rem]
+  h-[31rem] w-[31rem] sm:w-[67rem]
+  rounded-full
+  blur-[10rem]
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.left-circle {
+  @apply bg-[#dbd7fb]
+  absolute -z-10 top-[-1rem] left-[-35rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem]
+  h-[31rem] w-[50rem] sm:w-[67rem]
+  rounded-full
+  blur-[10rem]
 }
