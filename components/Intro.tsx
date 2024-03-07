@@ -1,7 +1,12 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
+import { BsArrowRight } from "react-icons/bs";
+import { HiDownload } from "react-icons/hi";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 import profilePic from "../public/portrait.png";
 
@@ -48,6 +53,40 @@ export default function Intro() {
         building <span className="italic">web apps</span>. My focus is on{" "}
         <span className="underline">React (Next.js)</span>.
       </motion.p>
+      <motion.div
+        className="standard-flex flex-col sm:flex-row gap-3 px-4 text-m font-medium"
+        initial={{ y: 100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{
+          delay: 0.1,
+        }}
+      >
+        <Link href="#contact" className="btn btn-primary group">
+          Contact me{" "}
+          <BsArrowRight className="opacity-75 group-hover:translate-x-1.5 transition" />
+        </Link>
+        <a
+          href="/alexey-sytnikov-resume.pdf"
+          download
+          className="btn btn-secondary"
+        >
+          Download CV <HiDownload className="opacity-75" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/alexey-sytnikov/"
+          target="_blank"
+          className="btn btn-icon"
+        >
+          <FaLinkedin />
+        </a>
+        <a
+          href="https://github.com/sytnikov"
+          target="_blank"
+          className="btn btn-icon"
+        >
+          <FaGithub />
+        </a>
+      </motion.div>
     </section>
   );
 }
