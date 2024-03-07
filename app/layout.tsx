@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-gray-50 text-gray-950 h-[3000px]`}>
+      <body className={`${inter.className} bg-gray-50 text-gray-950 h-[3000px] pt-28 sm:pt-36`}>
         <div className='left-circle'></div>
         <div className='right-circle'></div>
         <Header />
