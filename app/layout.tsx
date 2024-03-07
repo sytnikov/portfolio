@@ -1,5 +1,7 @@
-import './globals.css'
 import { Inter } from 'next/font/google'
+
+import './globals.css'
+import Header from '@/components/Header'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,9 +17,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-gray-50 text-gray-950`}>
+      <body className={`${inter.className} bg-gray-50 text-gray-950 h-[3000px]`}>
         <div className='left-circle'></div>
         <div className='right-circle'></div>
+        <Header />
         {children}
       </body>
     </html>
