@@ -12,7 +12,7 @@ import profilePic from "../public/portrait.png";
 
 export default function Intro() {
   return (
-    <section>
+    <section className="!mb-0">
       <div className="standard-flex">
         <div className="relative">
           <motion.div

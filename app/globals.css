@@ -18,7 +18,7 @@ main {
 }
 
 section {
-  @apply mb-28 max-w-[40rem] text-center sm:mb-0
+  @apply mb-28 max-w-[40rem] text-center
   leading-8
 }
 
@@ -37,6 +37,35 @@ section p {
 
 .divider {
   @apply bg-gray-200 my-16 h-16 w-1 rounded-full hidden sm:block
+}
+
+article {
+  @apply bg-gray-100 max-w-[40rem] border border-black/5 
+  overflow-hidden sm:pr-4 relative text-left sm:h-[20rem]
+  mb-3 sm:mb-8 last:mb-0 hover:bg-gray-200 transition
+  rounded-lg
+}
+
+article div {
+  @apply flex flex-col pt-4 pb-7 px-5 sm:pt-8 sm:pl-8
+  sm:pr-2 sm:max-w-[50%] h-full 
+}
+
+article h3 {
+  @apply text-xl font-semibold
+}
+
+article p {
+  @apply text-gray-700 text-sm mt-2 leading-relaxed
+}
+
+article ul {
+  @apply flex flex-wrap mt-4 gap-2 sm:mt-auto
+}
+
+article ul li {
+  @apply bg-black/[0.7] px-3 py-0 text-[0.55rem] text-white
+  rounded-full tracking-wider uppercase
 }
 
 /* background styles */
@@ -105,4 +134,18 @@ nav ul li Link {
 .btn-icon {
   @apply  bg-white text-2xl text-gray-700 px-4 cursor-pointer
   focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950
+}
+
+/* image styles */
+
+.project-image {
+  @apply absolute top-8 -right-40 w-[28rem] rounded-t-lg
+  shadow-2xl group-odd:right-[initial] group-odd:-left-40
+  group-hover:-translate-x-3
+  group-hover:translate-y-3 
+  group-hover:-rotate-2
+  group-odd:group-hover:translate-x-3
+  group-odd:group-hover:translate-y-3 
+  group-odd:group-hover:rotate-2
+  group-hover:scale-[1.03] transition
 }
