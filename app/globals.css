@@ -35,6 +35,16 @@ section p {
   @apply mb-3
 }
 
+section ul {
+  @apply flex flex-wrap items-center justify-start gap-2
+  text-sm sm:text-lg text-gray-800
+}
+
+section li {
+  @apply bg-white border border-black/[0.1]
+  px-5 py-2 rounded-xl hover:bg-gray-100
+}
+
 .divider {
   @apply bg-gray-200 my-16 h-16 w-1 rounded-full hidden sm:block
 }
