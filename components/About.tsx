@@ -1,13 +1,19 @@
 "use client";
 
-import { animate, motion } from "framer-motion";
+import { motion } from "framer-motion";
+
+import { useSectionInView } from "@/lib/hooks";
 
 export default function About() {
+  const { ref } = useSectionInView("About")
+
   return (
     <motion.section
+      ref={ref}
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
+      id="about"
     >
       <h2>About me</h2>
       <p>
