@@ -9,10 +9,13 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
 import profilePic from "../public/portrait.png";
+import { useSectionInView } from "@/lib/hooks";
 
 export default function Intro() {
+  const { ref } = useSectionInView("Home", 0.5)
+
   return (
-    <section className="!mb-0">
+    <section ref={ref} id="home" className="!mb-0 scroll-mt-36">
       <div className="standard-flex">
         <div className="relative">
           <motion.div
@@ -46,7 +49,10 @@ export default function Intro() {
           </motion.span>
         </div>
       </div>
-      <motion.h1 initial={{ y: 100, opacity: 0 }} animate={{ y: 0, opacity: 1 }}>
+      <motion.h1
+        initial={{ y: 100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+      >
         <span className="font-bold">Hey, I'm Alexey.</span> I'm a{" "}
         <span className="font-bold">full-stack developer</span> with{" "}
         <span className="font-bold">4 years</span> of experience in IT. I enjoy

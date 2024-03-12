@@ -19,7 +19,7 @@ main {
 
 section {
   @apply mb-28 max-w-[40rem] text-center
-  leading-8
+  leading-8 scroll-mt-28
 }
 
 section h1 {
@@ -108,7 +108,7 @@ nav ul {
 }
 
 nav ul li {
-  @apply h-3/4 flex items-center justify-center
+  @apply h-3/4 flex items-center justify-center relative
 }
 
 nav ul li Link {
