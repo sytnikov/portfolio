@@ -4,6 +4,10 @@
 
 /* common styles */
 
+html {
+  --line-color: #e5e7eb;
+}
+
 .standard-flex {
   @apply flex items-center justify-center
 }
@@ -159,3 +163,4 @@ nav ul li Link {
   group-odd:group-hover:rotate-2
   group-hover:scale-[1.03] transition
 }
+

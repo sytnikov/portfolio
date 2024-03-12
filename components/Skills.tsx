@@ -33,7 +33,9 @@ export default function Skills() {
             initial="initial"
             whileInView="animate"
             custom={index}
-
+            viewport={{
+              once: true,
+            }}
           >
             {skill}
           </motion.li>
