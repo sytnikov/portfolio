@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${inter.className} bg-gray-50 text-gray-950 h-[3000px] pt-28 sm:pt-36`}
+        className={`${inter.className} bg-gray-50 text-gray-950 pt-28 sm:pt-36`}
       >
         <div className="left-circle"></div>
         <div className="right-circle"></div>

@@ -39,7 +39,7 @@ export const experiencesData = [
     location: "Integrify Academy | Helsinki, FI",
     description:
       "Graduated as a full-stack developer after 6 months of training. Main focus on MERN stack.",
-    icon: React.createElement(LuGraduationCap),
+    icon: React.createElement(FaReact),
     date: "2023-2024",
   },
   {
@@ -55,7 +55,7 @@ export const experiencesData = [
     location: "Marble Technologies Oy | Helsinki, FI",
     description:
       "Managed and supported 10.000+ international users. Decreased the number of tickets by 50%.",
-    icon: React.createElement(FaReact),
+    icon: React.createElement(CgWorkAlt),
     date: "2020 - 2023",
   },
 ] as const;
@@ -104,4 +104,5 @@ export const skillsData = [
   "Python",
   "Django",
   "Framer Motion",
+  "Resend"
 ] as const;
