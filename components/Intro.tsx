@@ -10,9 +10,11 @@ import { FaLinkedin } from "react-icons/fa";
 
 import profilePic from "../public/portrait.png";
 import { useSectionInView } from "@/lib/hooks";
+import { useActiveSectionContext } from "@/context/ActiveSectionContext";
 
 export default function Intro() {
-  const { ref } = useSectionInView("Home", 0.5)
+  const { ref } = useSectionInView("Home", 0.5);
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext()
 
   return (
     <section ref={ref} id="home" className="!mb-0 scroll-mt-36">
@@ -67,7 +69,14 @@ export default function Intro() {
           delay: 0.1,
         }}
       >
-        <Link href="#contact" className="btn btn-primary group">
+        <Link
+          href="#contact"
+          className="btn btn-primary group"
+          onClick={() => {
+            setActiveSection("Contact");
+            setTimeOfLastClick(Date.now());
+          }}
+        >
           Contact me{" "}
           <BsArrowRight className="opacity-75 group-hover:translate-x-1.5 transition" />
         </Link>
