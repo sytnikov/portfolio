@@ -129,6 +129,24 @@ nav ul li Link {
   @apply flex w-full items-center justify-center px-3 py-3
 }
 
+/* footer styles */
+
+footer {
+  @apply mb-10 px-4 text-center text-gray-500
+}
+
+footer small {
+  @apply block mb-2 text-xs font-medium
+}
+
+footer p {
+  @apply text-xs 
+}
+
+footer span {
+  @apply font-semibold
+}
+
 /* button styles */
 
 .btn {
