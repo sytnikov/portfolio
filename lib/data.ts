@@ -104,5 +104,6 @@ export const skillsData = [
   "Python",
   "Django",
   "Framer Motion",
-  "Resend"
+  "Resend",
+  "React Email"
 ] as const;
