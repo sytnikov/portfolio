@@ -31,7 +31,7 @@ export default function Project({
       className="group mb-3 sm:mb-8 last:mb-0"
     >
       <article>
-        <div className="group-odd:ml-[19rem]">
+        <div>
           <h3>{title}</h3>
           <p>{description}</p>
           <ul>

@@ -17,7 +17,7 @@ export default function Intro() {
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext()
 
   return (
-    <section ref={ref} id="home" className="!mb-0 scroll-mt-36">
+    <section ref={ref} id="home" className="scroll-mt-36">
       <div className="standard-flex">
         <div className="relative">
           <motion.div

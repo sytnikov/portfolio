@@ -29,6 +29,7 @@ export default function Skills() {
         {skillsData.map((skill, index) => (
           <motion.li 
             key={index}
+            className="skills"
             variants={fadeInAnimationVariants}
             initial="initial"
             whileInView="animate"
