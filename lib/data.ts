@@ -67,6 +67,7 @@ export const projectsData = [
       "Interactive high-perfomance image gallery displaying pictures from the Pexels library. Designed to provide users with the neat image search functionality.",
     tags: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Zod"],
     imageUrl: galleryImg,
+    url: "https://gallery.sytnikov.dev/",
   },
   {
     title: "Tennis Products E-Store",
@@ -74,6 +75,7 @@ export const projectsData = [
       "E-commerce platform for selling tennis-related produce providing product CRUD operations, user profiling, cart, sorting, filtering and searching functionality, and an admin dashboard.",
     tags: ["React", "TypeScript", "Redux", "Express.js", "MongoDB", "Material UI"],
     imageUrl: tennisStoreImg,
+    url: "https://tennis-store.sytnikov.bio/",
   },
   {
     title: "Ticket Tracker",
@@ -81,6 +83,7 @@ export const projectsData = [
       "Ticket tracking app allowing to create new tickets and delete them once they are completed. It has features like user authentication and protected action routes.",
     tags: ["React", "Next.js", "Supabase", "Tailwind CSS"],
     imageUrl: ticketsImg,
+    url: "https://tickets.sytnikov.dev/",
   },
 ] as const;
 
