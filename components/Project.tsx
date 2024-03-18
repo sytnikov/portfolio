@@ -14,6 +14,7 @@ export default function Project({
   description,
   tags,
   imageUrl,
+  url
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -31,6 +32,7 @@ export default function Project({
       className="group mb-3 sm:mb-8 last:mb-0"
     >
       <article>
+        <a href={url} target="_blank">
         <div>
           <h3>{title}</h3>
           <p>{description}</p>
@@ -46,6 +48,10 @@ export default function Project({
           quality={95}
           className="project-image"
         />
+        </a>
+        
+      
+        
       </article>
     </motion.div>
   );
