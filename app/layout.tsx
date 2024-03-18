@@ -23,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.className}`}>
+      <body className={inter.className}>
         <div className="left-circle"></div>
         <div className="right-circle"></div>
         <ThemeContextProvider>
