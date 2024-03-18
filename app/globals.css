@@ -15,6 +15,7 @@ html.dark {
 body {
   @apply  bg-gray-50 text-gray-950 pt-28 sm:pt-36
   dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90
+  min-h-[100vh] flex flex-col
 }
 
 .standard-flex {
@@ -94,8 +95,7 @@ article ul li {
 }
 
 .skills {
-  @apply hover:bg-gray-100 dark:bg-gray-700
-  dark:text-white/90 dark:hover:bg-gray-600
+  @apply dark:bg-gray-700 dark:text-white/90
 }
 
 /* background styles */
@@ -161,7 +161,7 @@ nav ul li Link {
 /* footer styles */
 
 footer {
-  @apply mb-10 px-4 text-center text-gray-500
+  @apply mt-auto mb-10 px-4 text-center text-gray-500
 }
 
 footer small {
@@ -249,4 +249,27 @@ form textarea {
   @apply h-52 rounded-lg my-3 border border-black/10 p-4
   outline-gray-900  dark:bg-white dark:bg-opacity-90 
   dark:focus:bg-opacity-100 transition-all dark:outline-none
+}
+
+/* loading spinner */
+.loadingSpinnerContainer {
+  @apply flex justify-center items-center mt-20
+}
+
+.loadingSpinner {
+  width: 64px;
+  height: 64px;
+  border: 8px solid;
+  border-color: #505050 transparent #a0a0a0 transparent;
+  border-radius: 50%;
+  animation: spin 1.2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
