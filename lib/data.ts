@@ -35,11 +35,19 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: "Full-stack Freelance Developer",
+    location: "Remotely | Helsinki, FI",
+    description:
+      "Completed 4 full-stack projects with a focus on React (Next.js) framework.",
+    icon: React.createElement(FaReact),
+    date: "2023-present",
+  },
+  {
     title: "Full-stack Development Trainee",
     location: "Integrify Academy | Helsinki, FI",
     description:
       "Graduated as a full-stack developer after 6 months of training. Main focus on MERN stack.",
-    icon: React.createElement(FaReact),
+    icon: React.createElement(LuGraduationCap),
     date: "2023-2024",
   },
   {
@@ -109,7 +117,7 @@ export const skillsData = [
   "Python",
   "Git",
   "CLI Scripting",
-  "Tailwind",
+  "Tailwind CSS",
   "Material UI",
   "Framer Motion",
   "Resend",
