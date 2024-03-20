@@ -66,8 +66,8 @@ section li {
 }
 
 article {
-  @apply bg-gray-100 max-w-[40rem] border border-black/5 
-  overflow-hidden sm:pr-4 relative text-left sm:h-[20rem]
+  @apply relative bg-gray-100 max-w-[40rem] border border-black/5 
+  overflow-hidden sm:pr-4 text-left sm:h-[20rem]
   mb-3 sm:mb-8 last:mb-0 hover:bg-gray-200 transition
   rounded-lg dark:bg-gray-700 dark:hover:bg-gray-600
 }
