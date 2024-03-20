@@ -120,6 +120,7 @@ export const skillsData = [
   "Tailwind CSS",
   "Material UI",
   "Framer Motion",
+  "Zod",
   "Resend",
   "React Email"
 ] as const;
