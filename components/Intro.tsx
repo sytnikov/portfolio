@@ -59,7 +59,8 @@ export default function Intro() {
         <span className="font-bold">full-stack developer</span> with{" "}
         <span className="font-bold">4 years</span> of experience in IT. I enjoy
         building <span className="italic">web apps</span>. My focus is on{" "}
-        <span className="underline">React (Next.js)</span>.
+        <span className="underline">React (Next.js)</span> and {" "}
+        <span className="underline">Node.js</span>.
       </motion.h1>
       <motion.div
         className="standard-flex flex-col sm:flex-row gap-3 px-4 text-m font-medium"
