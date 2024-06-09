@@ -83,7 +83,7 @@ export const projectsData = [
       "E-commerce platform for selling tennis-related produce providing product CRUD operations, user profiling, cart, sorting, filtering and searching functionality, and an admin dashboard.",
     tags: ["React", "TypeScript", "Redux", "Express.js", "MongoDB", "Material UI"],
     imageUrl: tennisStoreImg,
-    url: "https://tennis-store.sytnikov.bio/",
+    url: "https://tennis-store.sytnikov.dev/",
   },
   {
     title: "Ticket Tracker",
