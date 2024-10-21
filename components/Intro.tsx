@@ -82,7 +82,7 @@ export default function Intro() {
           <BsArrowRight className="opacity-75 group-hover:translate-x-1.5 transition" />
         </Link>
         <a
-          href="/alexey-sytnikov-resume.pdf"
+          href="/Alexey-Sytnikov-CV.pdf"
           download
           className="btn btn-secondary"
         >
