@@ -3,6 +3,7 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import galleryImg from "@/public/gallery.png";
+import generatorImg from "@/public/image-generator.png";
 import tennisStoreImg from "@/public/tennis-store.png";
 import ticketsImg from "@/public/tickets.png";
 
@@ -38,7 +39,7 @@ export const experiencesData = [
     title: "Full-stack Freelance Developer",
     location: "Remotely | Helsinki, FI",
     description:
-      "Completed 4 full-stack projects with a focus on React (Next.js) framework.",
+      "Completed 5+ full-stack projects with a focus on React (Next.js) framework.",
     icon: React.createElement(FaReact),
     date: "2023-present",
   },
@@ -69,6 +70,14 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "AI Image Generator",
+    description:
+      "This Chrome extension allows users to input a prompt and receive a set of AI-generated images based on the description. The extension communicates with the image generation model through a backend proxy server using REST API.",
+    tags: ["React", "TypeScript", "Express.js", "Webpack", "MaterialUI"],
+    imageUrl: generatorImg,
+    url: "https://chromewebstore.google.com/detail/chatgpt-image-generator/nnpdeoblieaeppbbemdbdbpajcpoogcp",
+  },
   {
     title: "Image Gallery",
     description:
